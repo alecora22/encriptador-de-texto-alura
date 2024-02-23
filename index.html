@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+
+   
+    <title>Encriptador de texto alura</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <img class="logo" src="/images/img/Logo.png" alt="logo" />
+      </header>
+      <section class="section1">
+        <textarea placeholder="Ingrese texto aqui" class="textarea"
+        id="textarea1"></textarea>
+        <div class="contanedorelemendos1">
+          <div class="contenedormensaje">
+            <img class="iconoDeMensaje"
+              src="/images/img/icono-exclamacion.png"
+              alt="icono-exclamacion"
+            />
+            <p>solo letras minusculas y sin acentos</p>
+          </div>
+          <div class="contenedorbotones">
+            <button class="btn-Encriptador" type="button" onclick = "encriptar()" >Encriptador</button>
+            <button class="btn-Desencriptador" type="button" onclick = "desencriptar()" >Desencriptador</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section2">
+        <div class="contenedormensajes2">
+          <!-- <div class="contenedoDeImagen">
+            <img class="munieco"id="idmunieco" src="/images/img/Muñeco.png" alt="muñeco" />
+          </div> -->
+          <p class="avisodemensaje" id="avisodemensaje">Ningun mensaje fue encontrado</p>
+           <p class="parrafo" id="parrafo">"ingresa el texto que desees encriptar o desencriptar"</p>
+          <div>
+            <button class="btn-copiar" id="btn-copiar" type="button"onclick="copiar()">copiar</button>
+          </div>
+          
+        </div>
+      </section>
+      
+    </main>
+    <footer>
+      <div class="containerfooter">
+        <h2 class="textofooter">challenge encriptador de texto alura <br>by Alejandro Victor Cora </h2>
+        <div class="containerelementos">
+          <a href="https://www.linkedin.com/in/alejandrocora"><img class="imglinkeding" src="/images/img/linkedin.png" alt="linkeding"></a>
+         <a href="https://github.com/alecora22"><img class="imggit" src="/images/img/github.png" alt="github"></link>
+        </div>
+      </div>
+    </footer>
+    <script src="/app.js"></script>
+  </body>
+</html>
